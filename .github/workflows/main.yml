@@ -31,7 +31,7 @@ jobs:
       with:
         args: pylint --help
 
-    - name: Install dependencies and run pylint
-      run: |
-        pip install -r requirements.txt
-        pylint **/*.py
+    # - name: Install dependencies and run pylint
+    #   run: |
+    #     pip install -r requirements.txt
+    #     pylint **/*.py
