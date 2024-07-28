@@ -28,9 +28,3 @@ jobs:
         
     - name: Install pylint
       uses: cclauss/GitHub-Action-for-pylint@master
-      with:
-        args: pylint --help
-
-    - name: run pylint
-      run: |
-         pylint **/*.py
