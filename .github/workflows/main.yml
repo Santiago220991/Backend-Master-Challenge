@@ -24,6 +24,7 @@ jobs:
     - name: update pip
       run: |
         pip install --upgrade pip
+        pip install wheel setuptools
 
     - name: Install docstring
       run: |
