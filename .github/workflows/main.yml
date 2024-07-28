@@ -21,6 +21,11 @@ jobs:
       with:
         python-version: '3.x'
 
+
+    - name: Install docstring
+      run: |
+        pip install docstring
+        
     - name: Install pylint
       run: |
         pip install pylint
