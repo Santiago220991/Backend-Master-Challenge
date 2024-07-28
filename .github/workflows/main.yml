@@ -21,6 +21,9 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: update pip
+      run: |
+        pip install --upgrade pip
 
     - name: Install docstring
       run: |
