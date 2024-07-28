@@ -24,15 +24,12 @@ jobs:
     - name: update pip
       run: |
         pip install --upgrade pip
-        pip install wheel setuptools
-
-    - name: Install docstring
-      run: |
-        pip install docstring
+        
         
     - name: Install pylint
-      run: |
-        pip install pylint
+      uses: cclauss/GitHub-Action-for-pylint@master
+      with:
+        args: pylint --help
 
     - name: Install dependencies and run pylint
       run: |
