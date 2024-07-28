@@ -21,6 +21,10 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install pylint
+      run: |
+        pip install pylint
+
     - name: Install dependencies and run pylint
       run: |
         pip install -r requirements.txt
