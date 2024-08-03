@@ -17,7 +17,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator:
 
 
 def create_app() -> FastAPI:
-app = FastAPI(lifespan=lifespan)
+    app = FastAPI(lifespan=lifespan)
     app.include_router(health_check_router, tags=["health check"])
     app.include_router(product_router, tags=["products"])
     return app
