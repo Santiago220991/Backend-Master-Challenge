@@ -62,8 +62,8 @@ win_start:  ## Starts the debug of the program in windows environment
 
 .PHONY: lint
 lint: ## Starts linter tool
-	poetry run flake8 .
+	flake8 .
 
 .PHONY: tests
 tests: ## Starts tests
-	poetry run python -m pytest
+	python -m pytest
