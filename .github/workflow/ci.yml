@@ -28,6 +28,6 @@ jobs:
         run: |
           make tests
 
-      -name : Run Linter
+      - name : Run Linter
         run: |
           make lint
