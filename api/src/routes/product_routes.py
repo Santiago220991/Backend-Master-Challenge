@@ -10,9 +10,7 @@ from app.src.use_cases import (
     CreateProductResponse,
     CreateProductRequest,
     DeleteProductById,
-    DeleteProductByIdResponse
-
-    
+    DeleteProductByIdResponse    
 )
 from ..dtos import (
     ProductBase,
@@ -25,7 +23,7 @@ from factories.use_cases import (
     list_product_use_case,
     find_product_by_id_use_case,
     create_product_use_case,
-    delete_product_use_case,
+    delete_product_use_case #figure this out!
 )
 
 product_router = APIRouter(prefix="/products")

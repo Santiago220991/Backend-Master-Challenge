@@ -12,3 +12,5 @@ class DeleteProductByIdResponse(NamedTuple):
     status: ProductStatuses
     is_available: bool
 
+
+
