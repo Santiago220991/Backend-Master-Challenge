@@ -23,6 +23,7 @@ jobs:
       - name: Install Dependencies
         run: |
           make create_dev_env
+          source .venv/bin/activate
 
       - name: Run Tests
         run: |
